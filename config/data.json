@@ -2,73 +2,73 @@
   "petugas": [
     {
       "nama": "VARIDA DWIANA",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. BAMBU KUNING RT.002 RW.001",
       "foto": "img/varida.jpg",
       "surat_tugas": "dok-st/varida.pdf"
     },
     {
       "nama": "SITI FAUZIAH",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. GUNUNG MENYAN RT.004 RW.002",
       "foto": "img/siti.jpg",
-      "surat_tugas": "dok-st/siti.pdf"
+      "surat_tugas": "dok-st/fauziah.pdf"
     },
     {
       "nama": "ETI NURHAYATI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. GUNUNG MENYAN RT.003 RW.002",
       "foto": "img/eti.jpg",
       "surat_tugas": "dok-st/eti.pdf"
     },
     {
       "nama": "JUWARTI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. KANANGA RT.001 RW.004",
       "foto": "img/juwarti.jpg",
       "surat_tugas": "dok-st/juwarti.pdf"
     },
     {
       "nama": "SITI ARNASIH",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. BABAKAN RT.001 RW.005",
       "foto": "img/siti.jpg",
-      "surat_tugas": "dok-st/siti.pdf"
+      "surat_tugas": "dok-st/arnasih.pdf"
     },
     {
       "nama": "LINDA FAJARWATI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. CIKONENG RT.003 RW.003",
       "foto": "img/linda.jpg",
       "surat_tugas": "dok-st/linda.pdf"
     },
     {
       "nama": "DIAH RODIAH",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. GUNUNG MENYAN SABRANG RT.001 RW.007",
       "foto": "img/diah.jpg",
       "surat_tugas": "dok-st/diah.pdf"
     },
     {
       "nama": "AAY HERAWATI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. SAWAH RT.001 RW.006",
       "foto": "img/aay.jpg",
       "surat_tugas": "dok-st/aay.pdf"
     },
     {
       "nama": "DEDE AKMALIYATUSSA’ADAH",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. SAWAH RT.002 RW.006",
       "foto": "img/dede.jpg",
       "surat_tugas": "dok-st/dede.pdf"
     },
     {
       "nama": "KOKOM SUSILOWATI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. GUNUNG MENYAN SABRANG RT.001 RW.007",
       "foto": "img/kokom.jpg",
       "surat_tugas": "dok-st/kokom.pdf"
     },
     {
       "nama": "ERNA HARIYANI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. BABAKAN RT.002 RW.005",
       "foto": "img/erna.jpg",
       "surat_tugas": "dok-st/erna.pdf"
     },
     {
       "nama": "GITA WINDASARI",
-      "alamat": "Desa Gunungmenyan",
+      "alamat": "KP. CIKONENG RT.003 RW.003",
       "foto": "img/gita.jpg",
       "surat_tugas": "dok-st/gita.pdf"
     }
