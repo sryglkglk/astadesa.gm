@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTA GEO DESA - Portal Link</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Link ke CSS Eksternal -->
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body class="bg-gradient-to-br from-teal-800 via-emerald-600 to-blue-900 min-h-screen text-white flex items-center justify-center p-4 sm:p-8 bg-animate font-sans relative overflow-x-hidden">
+
+    <!-- Ornamen latar belakang -->
+    <div class="fixed top-[-100px] left-[-100px] w-64 h-64 bg-white opacity-5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-[-100px] right-[-100px] w-80 h-80 bg-teal-300 opacity-10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: BERANDA (HOME)                     -->
+    <!-- ========================================== -->
+    <main id="view-home" class="glass-panel w-full max-w-md rounded-3xl p-8 shadow-2xl relative z-10 transition-opacity duration-300">
+        
+        <!-- Bagian Jam & Tanggal -->
+        <div class="flex flex-col items-center justify-center mb-8">
+            <div class="glass-button px-6 py-2 rounded-full mb-4 flex items-center gap-3">
+                <i class="fa-regular fa-clock text-teal-200 text-xl"></i>
+                <div class="text-center">
+                    <div id="clock" class="text-2xl font-bold tracking-widest text-white leading-none">00:00:00</div>
+                    <div id="date" class="text-xs font-medium text-teal-100 uppercase tracking-wide mt-1">Hari, Tanggal</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header / Profil -->
+        <div class="flex flex-col items-center text-center mb-8">
+            <div class="w-24 h-24 rounded-full bg-white p-1 shadow-lg mb-4">
+                <div class="w-full h-full rounded-full border-4 border-white overflow-hidden">
+                    <img src="asset/default-icon.png" alt="ASTA GEO DESA" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <h1 class="text-2xl font-bold mb-1 tracking-wide">ASTA GEO DESA</h1>
+            <p class="text-sm text-teal-100 opacity-90 px-4">
+                Portal Informasi & Dokumen Resmi Petugas Enumerator/Surveyor
+            </p>
+        </div>
+
+        <!-- Daftar Tautan Utama -->
+        <div class="space-y-4">
+            <!-- Tombol SK Publik -> Sesuaikan path PDF-nya ke folder dok-sk -->
+            <button onclick="openPdfModal('Dokumen SK Publik', 'dok-sk/sk-publik.pdf')" class="glass-button w-full py-4 px-6 rounded-2xl flex items-center gap-4 text-left group text-white">
+                <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-teal-700 transition-colors duration-300">
+                    <i class="fa-solid fa-file-contract text-lg"></i>
+                </div>
+                <div class="flex-1 font-medium">Dokumen SK Enumerator
+                </div>
+                <i class="fa-solid fa-chevron-right opacity-50 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </button>
+
+            <!-- Tombol Pindah ke Halaman Petugas -->
+            <button onclick="switchView('view-petugas')" class="glass-button w-full py-4 px-6 rounded-2xl flex items-center gap-4 text-left group text-white">
+                <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-teal-700 transition-colors duration-300">
+                    <i class="fa-solid fa-users text-lg"></i>
+                </div>
+                <div class="flex-1 font-medium">Daftar Nama Enumerator</div>
+                <i class="fa-solid fa-chevron-right opacity-50 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center">
+            <p class="text-xs text-white/60">
+                &copy; <span id="year"></span> ASTA GEO DESA.<br>Bankeu Akselerasi<br>Desa Gunungmenyan Kecamatan Pamijahan.
+            </p>
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: DAFTAR PETUGAS                     -->
+    <!-- ========================================== -->
+    <main id="view-petugas" class="glass-panel w-full max-w-5xl rounded-3xl p-6 sm:p-8 shadow-2xl relative z-10 hidden-view transition-opacity duration-300">
+        
+        <!-- Header Halaman Petugas -->
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-8 gap-4 border-b border-white/20 pb-4">
+            <button onclick="switchView('view-home')" class="glass-button px-4 py-2 rounded-xl flex items-center gap-2 text-sm font-medium hover:bg-white/20">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+            </button>
+            <div class="text-center sm:text-right">
+                <h2 class="text-2xl font-bold tracking-wide">Daftar Petugas</h2>
+                <p class="text-sm text-teal-100">Sensus & Surveyor ASTA GEO DESA</p>
+            </div>
+        </div>
+
+        <!-- Grid Petugas (Diload Otomatis dari JSON) -->
+        <div id="petugas-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="col-span-full text-center py-8">
+                <i class="fa-solid fa-spinner fa-spin text-3xl mb-3"></i>
+                <p>Memuat data petugas...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- MODAL VIEWER PDF                           -->
+    <!-- ========================================== -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-900/80 backdrop-blur-sm hidden-view opacity-0 transition-opacity duration-300">
+        <!-- Container Modal -->
+        <div class="bg-white/10 border border-white/20 rounded-2xl shadow-2xl w-full max-w-5xl h-[85vh] sm:h-[90vh] flex flex-col overflow-hidden transform scale-95 transition-transform duration-300" id="pdf-modal-content">
+            
+            <!-- Header Modal -->
+            <div class="bg-teal-900/80 backdrop-blur-md px-4 py-3 flex justify-between items-center border-b border-white/10">
+                <h3 id="pdf-title" class="font-semibold text-lg truncate pr-4 text-white">Judul Dokumen</h3>
+                <div class="flex gap-2 shrink-0">
+                    <!-- Tombol Download -->
+                    <a id="pdf-download-btn" href="#" target="_blank" download class="bg-blue-600 hover:bg-blue-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> <span class="hidden sm:inline">Download</span>
+                    </a>
+                    <!-- Tombol Tutup -->
+                    <button onclick="closePdfModal()" class="bg-red-500/80 hover:bg-red-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition flex items-center gap-2">
+                        <i class="fa-solid fa-times"></i> <span class="hidden sm:inline">Tutup</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Body Modal (Iframe Viewer) -->
+            <div class="flex-1 w-full bg-gray-200 relative">
+                <!-- Info Fallback jika PDF tidak tampil di HP -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-gray-500 text-center p-6 z-0">
+                    <i class="fa-solid fa-file-pdf text-5xl mb-3 text-gray-400"></i>
+                    <p class="text-sm">Jika dokumen tidak muncul secara otomatis di browser Anda, <br>silakan klik tombol <b>Download</b> di sudut kanan atas.</p>
+                </div>
+                <!-- Iframe untuk render PDF -->
+                <iframe id="pdf-iframe" src="" class="w-full h-full border-0 relative z-10 bg-white" title="PDF Viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link ke Javascript Eksternal -->
+    <script src="asset/script.js"></script>
+</body>
+</html>

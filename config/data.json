@@ -1,0 +1,76 @@
+{
+  "petugas": [
+    {
+      "nama": "VARIDA DWIANA",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/varida.jpg",
+      "surat_tugas": "dok-st/varida.pdf"
+    },
+    {
+      "nama": "SITI FAUZIAH",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/siti.jpg",
+      "surat_tugas": "dok-st/siti.pdf"
+    },
+    {
+      "nama": "ETI NURHAYATI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/eti.jpg",
+      "surat_tugas": "dok-st/eti.pdf"
+    },
+    {
+      "nama": "JUWARTI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/juwarti.jpg",
+      "surat_tugas": "dok-st/juwarti.pdf"
+    },
+    {
+      "nama": "SITI ARNASIH",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/siti.jpg",
+      "surat_tugas": "dok-st/siti.pdf"
+    },
+    {
+      "nama": "LINDA FAJARWATI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/linda.jpg",
+      "surat_tugas": "dok-st/linda.pdf"
+    },
+    {
+      "nama": "DIAH RODIAH",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/diah.jpg",
+      "surat_tugas": "dok-st/diah.pdf"
+    },
+    {
+      "nama": "AAY HERAWATI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/aay.jpg",
+      "surat_tugas": "dok-st/aay.pdf"
+    },
+    {
+      "nama": "DEDE AKMALIYATUSSA’ADAH",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/dede.jpg",
+      "surat_tugas": "dok-st/dede.pdf"
+    },
+    {
+      "nama": "KOKOM SUSILOWATI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/kokom.jpg",
+      "surat_tugas": "dok-st/kokom.pdf"
+    },
+    {
+      "nama": "ERNA HARIYANI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/erna.jpg",
+      "surat_tugas": "dok-st/erna.pdf"
+    },
+    {
+      "nama": "GITA WINDASARI",
+      "alamat": "Desa Gunungmenyan",
+      "foto": "img/gita.jpg",
+      "surat_tugas": "dok-st/gita.pdf"
+    }
+  ]
+}
