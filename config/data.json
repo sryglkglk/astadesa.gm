@@ -3,73 +3,73 @@
     {
       "nama": "VARIDA DWIANA",
       "alamat": "KP. BAMBU KUNING RT.002 RW.001",
-      "foto": "img/varida.jpg",
+      "foto": "../img/varida.jpg",
       "surat_tugas": "dok-st/varida.pdf"
     },
     {
       "nama": "SITI FAUZIAH",
       "alamat": "KP. GUNUNG MENYAN RT.004 RW.002",
-      "foto": "img/siti.jpg",
+      "foto": "../img/fauziah.jpg",
       "surat_tugas": "dok-st/fauziah.pdf"
     },
     {
       "nama": "ETI NURHAYATI",
       "alamat": "KP. GUNUNG MENYAN RT.003 RW.002",
-      "foto": "img/eti.jpg",
+      "foto": "../img/eti.jpg",
       "surat_tugas": "dok-st/eti.pdf"
     },
     {
       "nama": "JUWARTI",
       "alamat": "KP. KANANGA RT.001 RW.004",
-      "foto": "img/juwarti.jpg",
+      "foto": "../img/juwarti.jpg",
       "surat_tugas": "dok-st/juwarti.pdf"
     },
     {
       "nama": "SITI ARNASIH",
       "alamat": "KP. BABAKAN RT.001 RW.005",
-      "foto": "img/siti.jpg",
+      "foto": "../img/arnasih.jpg",
       "surat_tugas": "dok-st/arnasih.pdf"
     },
     {
       "nama": "LINDA FAJARWATI",
       "alamat": "KP. CIKONENG RT.003 RW.003",
-      "foto": "img/linda.jpg",
+      "foto": "../img/linda.jpg",
       "surat_tugas": "dok-st/linda.pdf"
     },
     {
       "nama": "DIAH RODIAH",
       "alamat": "KP. GUNUNG MENYAN SABRANG RT.001 RW.007",
-      "foto": "img/diah.jpg",
+      "foto": "../img/diah.jpg",
       "surat_tugas": "dok-st/diah.pdf"
     },
     {
       "nama": "AAY HERAWATI",
       "alamat": "KP. SAWAH RT.001 RW.006",
-      "foto": "img/aay.jpg",
+      "foto": "../img/aay.jpg",
       "surat_tugas": "dok-st/aay.pdf"
     },
     {
       "nama": "DEDE AKMALIYATUSSA’ADAH",
       "alamat": "KP. SAWAH RT.002 RW.006",
-      "foto": "img/dede.jpg",
+      "foto": "../img/dede.jpg",
       "surat_tugas": "dok-st/dede.pdf"
     },
     {
       "nama": "KOKOM SUSILOWATI",
       "alamat": "KP. GUNUNG MENYAN SABRANG RT.001 RW.007",
-      "foto": "img/kokom.jpg",
+      "foto": "../img/kokom.jpg",
       "surat_tugas": "dok-st/kokom.pdf"
     },
     {
       "nama": "ERNA HARIYANI",
       "alamat": "KP. BABAKAN RT.002 RW.005",
-      "foto": "img/erna.jpg",
+      "foto": "../img/erna.jpg",
       "surat_tugas": "dok-st/erna.pdf"
     },
     {
       "nama": "GITA WINDASARI",
       "alamat": "KP. CIKONENG RT.003 RW.003",
-      "foto": "img/gita.jpg",
+      "foto": "../img/gita.jpg",
       "surat_tugas": "dok-st/gita.pdf"
     }
   ]
